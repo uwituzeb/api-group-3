@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/city.png);
+   background-image: url(images/city.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -29,12 +29,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
 
 }
 
 .search-box input{
     width: 85%;
     font-size:20px;
+    padding: 10px;
 }
 .search-box button{
     width: 46px;
