@@ -17,9 +17,9 @@ Welcome to our Weather App project! This application allows users to check the c
 
 ## How to Use
 
-1. Enter the name of the city in the provided input field.
-
-2. Click the "Get Weather" button to fetch and display the weather information.
+1. Navigate to (https://uwituzeb.github.io/api-group-3/)
+2. Enter the name of the city in the provided input field.
+3. Click the "Get Weather" button to fetch and display the weather information.
 
 ## Demo Video
 
