@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
+    <title>Weather Api</title>
 </head>
-    <body>
-       
-        <div class="container">
-            <div class="header">
-                <div class="search-box">
-                    <input type="text" placeholder="Enter City Name for Weather" class="input-box">
-
-                    <button class="fa-solid fa-magnifying-glass" id="searchButton"></button>
-                </div>
+<body>
+    <!-- textbox for user input -->
+    <div class="container">
+       <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter City Name for Weather" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchButton"></button>
             </div>
+        </div>
 
+    <!-- error message -->
+    <section id="error">
             <div class="location-not-found">
                 <h1>Oops, location not found!</h1>
                 <img src="images/404.png" alt="Error">
             </div>
+    </section>
 
+    <!-- weather results -->
+    <section id="weather-body">
             <div class="weather-body">
                 <img src="images/cloud.png" alt="Weather Image" class="weather-img">
                 <div class="weather-box">
@@ -30,10 +34,8 @@
                     </p>
                     <p class="description">Light Rain</p>
                 </div>
-
-                    
             </div>
-        </div>
+    </section>
 
 
 
