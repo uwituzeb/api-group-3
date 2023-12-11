@@ -23,7 +23,6 @@ async function getWeatherData(city) {
         switch (weatherData.weather[0].main) {
             case 'Clouds':
                 weatherImg.src = "images/cloud.png";
-                setBodyBackground('cloudy');
                 break;
             case 'Clear':
                 weatherImg.src = "images/sun.png";
@@ -34,7 +33,8 @@ async function getWeatherData(city) {
                 setBodyBackground('snowy');
                 break;
             case 'Rain':
-                weatherImg.src = "images/Rain.jpg";
+                weatherImg.src = "images/rain.png";
+                weatherBody.style.color = "white";
                 setBodyBackground('rainy');
                 break;
         }
@@ -58,25 +58,20 @@ function displayErrorMessage(message) {
 function setBodyBackground(condition) {
     // Adjust the image URLs based on your actual image files
     switch (condition) {
-        case 'sunny':
-            body.style.backgroundImage = "url('images/sunny.jpg')";
-            body.style.backgroundSize = "cover";
-            break;
         case 'cloudy':
             body.style.backgroundImage = "url('images/cloud.jpg')";
-            body.style.backgroundSize = "cover";
+            break;
+        case 'sunny':
+            body.style.backgroundImage = "url('images/sunny.jpg')";
             break;
         case 'snowy':
             body.style.backgroundImage = "url('images/snow.jpg')";
-            body.style.backgroundSize = "cover";
             break;
         case 'rainy':
             body.style.backgroundImage = "url('images/Rain.jpg')";
-            body.style.backgroundSize = "cover";
             break;
         case 'not-found':
             body.style.backgroundImage = "url('images/not-found.jpg')";
-            body.style.backgroundSize = "cover";
             break;
         default:
             body.style.backgroundImage = "url('images/default-background.jpg')";
